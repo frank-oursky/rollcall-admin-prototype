@@ -432,3 +432,22 @@ table.dataTable thead .sorting:after {
     border-left-width: 0;
   }
 }
+.navbar {
+  background-color: #333;
+}
+.navbar .dropdown-toggle {
+  color: #fff;
+}
+.btn-page-header {
+  margin-left: 10px;
+}
+.btn-table-header {
+  display: block;
+}
+/* Utilities */
+.p-t-l {
+  padding-top: 50px;
+}
+.p-b-l {
+  padding-bottom: 50px;
+}
