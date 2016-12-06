@@ -118,7 +118,7 @@ body {
   transition: all .5s;
 }
 .btn-primary.btn-outline {
-  color: #428bca;
+  color: #D5201B;
 }
 .btn-success.btn-outline {
   color: #5cb85c;
@@ -450,4 +450,24 @@ table.dataTable thead .sorting:after {
 }
 .p-b-l {
   padding-bottom: 50px;
+}
+/* color */
+.panel-primary {
+  border-color: #D5201B;
+}
+.panel-primary > .panel-heading {
+  border-color: #D5201B;
+  background-color: #D5201B;
+}
+a {
+  color: #D5201B;
+}
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+  background-color: #D5201B;
+  border-color: #D5201B;
 }
