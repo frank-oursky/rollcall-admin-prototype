@@ -438,6 +438,17 @@ table.dataTable thead .sorting:after {
 .navbar .dropdown-toggle {
   color: #fff;
 }
+.navbar-default .navbar-brand {
+  color: #fff;
+  padding-left: 55px;
+  background: url('../img/header-logo.png');
+  background-size: 40px;
+  background-position: 10px center;
+  background-repeat: no-repeat;
+}
+.navbar-default .navbar-brand:hover {
+  color: #eee;
+}
 .btn-page-header {
   margin-left: 10px;
 }
@@ -462,6 +473,9 @@ table.dataTable thead .sorting:after {
 a {
   color: #D5201B;
 }
+a:hover {
+  color: #a81915;
+}
 .pagination > .active > a,
 .pagination > .active > a:focus,
 .pagination > .active > a:hover,
@@ -470,4 +484,10 @@ a {
 .pagination > .active > span:hover {
   background-color: #D5201B;
   border-color: #D5201B;
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+  background-color: #D5201B;
+  color: #fff;
 }

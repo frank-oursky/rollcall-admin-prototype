@@ -4,64 +4,104 @@ $(function() {
         element: 'morris-area-chart',
         data: [{
             period: '2010 Q1',
-            iphone: 2666,
-            ipad: null,
-            itouch: 2647
+            users: 2666,
+            events: null,
+            incidents: 2647
         }, {
             period: '2010 Q2',
-            iphone: 2778,
-            ipad: 2294,
-            itouch: 2441
+            users: 2778,
+            events: 2294,
+            incidents: 2441
         }, {
             period: '2010 Q3',
-            iphone: 4912,
-            ipad: 1969,
-            itouch: 2501
+            users: 4912,
+            events: 1969,
+            incidents: 2501
         }, {
             period: '2010 Q4',
-            iphone: 3767,
-            ipad: 3597,
-            itouch: 5689
+            users: 3767,
+            events: 3597,
+            incidents: 5689
         }, {
             period: '2011 Q1',
-            iphone: 6810,
-            ipad: 1914,
-            itouch: 2293
+            users: 6810,
+            events: 1914,
+            incidents: 2293
         }, {
             period: '2011 Q2',
-            iphone: 5670,
-            ipad: 4293,
-            itouch: 1881
+            users: 5670,
+            events: 4293,
+            incidents: 1881
         }, {
             period: '2011 Q3',
-            iphone: 4820,
-            ipad: 3795,
-            itouch: 1588
+            users: 4820,
+            events: 3795,
+            incidents: 1588
         }, {
             period: '2011 Q4',
-            iphone: 15073,
-            ipad: 5967,
-            itouch: 5175
+            users: 15073,
+            events: 5967,
+            incidents: 5175
         }, {
             period: '2012 Q1',
-            iphone: 10687,
-            ipad: 4460,
-            itouch: 2028
+            users: 10687,
+            events: 4460,
+            incidents: 2028
         }, {
             period: '2012 Q2',
-            iphone: 8432,
-            ipad: 5713,
-            itouch: 1791
+            users: 8432,
+            events: 5713,
+            incidents: 1791
         }],
         xkey: 'period',
-        ykeys: ['iphone', 'ipad', 'itouch'],
-        labels: ['iPhone', 'iPad', 'iPod Touch'],
+        ykeys: ['users', 'events', 'incidents'],
+        labels: ['users', 'events', 'iPod Touch'],
         pointSize: 2,
         hideHover: 'auto',
         resize: true
     });
 
-    Morris.Donut({
+
+
+    Morris.Bar({
+        element: 'morris-bar-chart',
+        data: [{
+            y: 'Sep16',
+            a: 100,
+            b: 90
+        }, {
+            y: 'Oct16',
+            a: 75,
+            b: 65
+        }, {
+            y: 'Nov16',
+            a: 50,
+            b: 40
+        }, {
+            y: 'Dec16',
+            a: 75,
+            b: 65
+        }, {
+            y: 'Jan17',
+            a: 50,
+            b: 40
+        }, {
+            y: 'Feb17',
+            a: 75,
+            b: 65
+        }, {
+            y: 'Mar17',
+            a: 100,
+            b: 90
+        }],
+        xkey: 'y',
+        ykeys: ['a', 'b'],
+        labels: ['User open every day', 'User open every week'],
+        hideHover: 'auto',
+        resize: true
+    });
+
+        Morris.Donut({
         element: 'morris-donut-chart',
         data: [{
             label: "Download Sales",
@@ -73,44 +113,6 @@ $(function() {
             label: "Mail-Order Sales",
             value: 20
         }],
-        resize: true
-    });
-
-    Morris.Bar({
-        element: 'morris-bar-chart',
-        data: [{
-            y: '2006',
-            a: 100,
-            b: 90
-        }, {
-            y: '2007',
-            a: 75,
-            b: 65
-        }, {
-            y: '2008',
-            a: 50,
-            b: 40
-        }, {
-            y: '2009',
-            a: 75,
-            b: 65
-        }, {
-            y: '2010',
-            a: 50,
-            b: 40
-        }, {
-            y: '2011',
-            a: 75,
-            b: 65
-        }, {
-            y: '2012',
-            a: 100,
-            b: 90
-        }],
-        xkey: 'y',
-        ykeys: ['a', 'b'],
-        labels: ['Series A', 'Series B'],
-        hideHover: 'auto',
         resize: true
     });
     
