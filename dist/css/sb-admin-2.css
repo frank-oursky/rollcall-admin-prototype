@@ -434,11 +434,19 @@ table.dataTable thead .sorting:after {
 }
 .navbar {
   background-color: #333;
+  background-image: url('../img/header-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 120px;
 }
 .navbar .dropdown-toggle {
   color: #fff;
 }
+.sidebar {
+  margin-top: 121px;
+}
 .navbar-default .navbar-brand {
+  margin-top: 34px;
   color: #fff;
   padding-left: 55px;
   background: url('../img/header-logo.png');
