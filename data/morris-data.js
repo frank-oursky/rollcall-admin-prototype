@@ -55,7 +55,7 @@ $(function() {
         }],
         xkey: 'period',
         ykeys: ['users', 'events', 'incidents'],
-        labels: ['users', 'events', 'iPod Touch'],
+        labels: ['users', 'events', 'sign up'],
         pointSize: 2,
         hideHover: 'auto',
         resize: true
